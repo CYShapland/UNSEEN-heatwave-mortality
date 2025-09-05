@@ -97,7 +97,7 @@ for (j in 1:length(forecast)){
                                       var = 't2m', is_ERA5=F)
       
       ### 03 SCALING FACTOR ###
-      #results extracted using scalingfactor_v2.py from JASMIN
+      #results extracted using scalingfactor.py 
       if (forecast[j]=="Pi"){
         obs_ext_adj<-adjust_scalingfactor(obs_ext,
                                         paste0(climate_dir,"ScalingFactor/scalingfactor_ENS_Pi_",
