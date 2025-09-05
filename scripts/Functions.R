@@ -192,7 +192,7 @@ reformat_ncf_to_DLNM <- function(ncf_dat, var, is_ERA5){
 
 adjust_scalingfactor <- function(original_data, scalingfactor_data, direction){
   scalingfactor_city <- read.table(scalingfactor_data, quote="\"", comment.char="")
-  GlobalMean_time <- read.table("M:/projects/ieu3/p2/001/working/data/Health/Canada/Mortality/cleaned/nleach/ScalingFactor/GlobalMean_time.txt", quote="\"", comment.char="", stringsAsFactors=F)
+  GlobalMean_time <- read.table("ScalingFactor/GlobalMean_time.txt", quote="\"", comment.char="", stringsAsFactors=F)
   GlobalMean_time["date"]<-gsub("\\T.*","",GlobalMean_time$V1)
   scalingfactor_city["date"]<-tail(GlobalMean_time$date,n=nrow(scalingfactor_city))
   
