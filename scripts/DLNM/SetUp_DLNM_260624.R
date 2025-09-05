@@ -20,7 +20,7 @@ library(RColorBrewer)
 library(dplyr)
 library(tidyr)
 
-wkDir<-"M:/working/data/Health/Canada/Mortality/cleaned"
+wkDir<-"YourDir"
 setwd(wkDir)
 
 ### load data ###
@@ -55,4 +55,4 @@ for(i in 1:ncities) {
 health_dat <- dat
 rm(dat)
 
-save(health_dat,file="M:/working/data/Health/Canada/Mortality/cleaned/DLNM/Canadian_HWcity_DLNMdata_260624.RData")
+save(health_dat,file="/DLNM/Canadian_HWcity_DLNMdata_260624.RData")
