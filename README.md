@@ -1,12 +1,15 @@
 # UNSEEN-heatwave-mortality
-Code associated with Shapland et al., 2024, Forecast-Attribution reveals enhanced heat-mortality from climate change in British Columbia Heatwave (Submitted to Science Advances).
 
-Weather forecast data is from Leach, N.J., Roberts, C.D., Aengenheyster, M. et al. Heatwave attribution based on reliable operational weather forecasts. Nat Commun 15, 4530 (2024). https://doi.org/10.1038/s41467-024-48280-7.
+Code associated with Shapland et al., 2024, Forecast-Attribution reveals enhanced heat-mortality from climate change in British Columbia Heatwave (Submitted to *Science Advances*).
 
-Mortality data is available by requesting access through the Research Data Centre of Statistics Canada.  
+Weather forecast data is from Leach, N.J., Roberts, C.D., Aengenheyster, M. et al. Heatwave attribution based on reliable operational weather forecasts. *Nat Commun* 15, 4530 (2024). <https://doi.org/10.1038/s41467-024-48280-7>.
 
-Main figures:
-script/main_figures.R gives the figures from main manuscript.  
+Mortality data is available by requesting access through the Research Data Centre of Statistics Canada.
 
-Supplementary figures:
-script/supp_figures.R gives the figures from supplementary materials.  
+Scaling factor to adjust for global average temperature: scripts in `/Attribution_modelling`
+
+Exposure-response modelling: scripts `/DLNM`
+
+Main figures: `script/Main_figures` gives the scripts for creating the figures from main manuscript.
+
+Supplementary figures: `script/Supplementary_figures` gives the scripts for creating the figures from supplementary materials.
