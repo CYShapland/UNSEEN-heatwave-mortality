@@ -34,12 +34,12 @@ library(plyr) ; library(PCICt) ; library(tidyverse)
 library(clock) ; library(lubridate); library(ncdf4)
 
 # set directories
-Dir<-"M:/projects/ieu3/p2/001/working/"
+Dir<-"YourDir"
 setwd(Dir)
 output_dir<-paste0(Dir, "results/DLNM/")
 
 # data dir
-climate_dir<-paste0(Dir,"data/Health/Canada/Mortality/cleaned/nleach/")
+climate_dir<-paste0(Dir,"ClimateData")
 
 # LOAD functions
 source(paste0(Dir,"scripts/Functions.R"))
@@ -55,7 +55,7 @@ source(paste0(Dir,"scripts/Functions.R"))
 regions <- c("abbotsford", "victoria", "vancouver", "lytton")
 
 # mortality and temperature data 1981-2015, used for establishing ER curves
-load(paste0(Dir,"data/Health/Canada/Mortality/cleaned/DLNM/Canadian_HWcity_DLNMdata_151223.RData"))
+load(paste0(Dir,"/DLNM/Canadian_HWcity_DLNMdata_151223.RData"))
 
 #names of HW attribution data
 forecast<-c("Pi","ENS","Incr")
