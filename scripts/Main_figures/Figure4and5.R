@@ -25,10 +25,6 @@ source(paste0(Dir,"scripts/Functions.R"))
 
 # Input: Proportion: DLNM exposure-mortality model
 
-Dir<-"M:/projects/ieu3/p2/001/working/"
-dtaDir<-paste0(Dir, "results/DLNM/")
-output_dir<-paste0(Dir, "results/plots/Canada/DLNM/")
-
 # lead time
 leadtime_range<-c("2021-06-26", "2021-06-22", "2021-06-18")
 leadtime_name<-c(3, 7, 11)
